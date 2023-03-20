@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Ticket Booking</title>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>BOOK MY SEAT</h1>
+    </div>
+
+    <div class="movie-container">
+      <label>MOVIE LIST:</label>
+      <select id="movie">
+        <option value="180">PIRATES OF THE CARIBBEAN (RS.180)</option>
+        <option value="200">AVENGERS END GAME (RS.200)</option>
+        <option value="130">THE DEPARTED(RS.130)</option>
+        <option value="150">AVATAR (RS.150)</option>
+      </select>
+    </div> 
+
+    <label for="">NO.OF TICKETS </label>
+    <input type="number" id="noseat" min="1" max="10">
+    
+
+    <ul class="showcase">
+      <li>
+        <div class="seat1"></div>
+        <small>N/A</small>
+      </li>
+
+      <li>
+        <div class="seat selected1"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="seat occupied1"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      
+      <div class="row">
+        <div class="seat" id="s1" onclick="count(1)">1</div>
+        <div class="seat" id="s2" onclick="count(2)">2</div>
+        <div class="seat" id="s3" onclick="count(3)">3</div>  
+        <div class="seat" id="s4" onclick="count(4)">4</div>
+        <div class="seat" id="s5" onclick="count(5)">5</div>
+        <div class="seat" id="s6" onclick="count(6)">6</div>
+        <div class="seat" id="s7" onclick="count(7)">7</div>
+        <div class="seat" id="s8" onclick="count(8)">8</div>
+      </div>
+      <div class="row">
+        <div class="seat" id="s9" onclick="count(9)">9</div>
+        <div class="seat" id="s10" onclick="count(10)">10</div>
+        <div class="seat" id="s11" onclick="count(11)">11</div>
+        <div class="seat" id="s12" onclick="count(12)">12</div>
+        <div class="seat" id="s13" onclick="count(13)">13</div>
+        <div class="seat" id="s14" onclick="count(14)">14</div>
+        <div class="seat" id="s15" onclick="count(15)">15</div>
+        <div class="seat" id="s16" onclick="count(16)">16</div>
+      </div>
+
+      <div class="row">
+        <div class="seat" id="s17" onclick="count(17)">17</div>
+        <div class="seat" id="s18" onclick="count(18)">18</div>
+        <div class="seat" id="s19" onclick="count(19)">19</div>
+        <div class="seat" id="s20" onclick="count(20)">20</div>
+        <div class="seat" id="s21" onclick="count(21)">21</div>
+        <div class="seat" id="s22" onclick="count(22)">22</div>
+        <div class="seat" id="s23" onclick="count(23)">23</div>
+        <div class="seat" id="s24" onclick="count(24)">24</div>
+      </div>
+
+      <div class="row">
+        <div class="seat" id="s25" onclick="count(25)">25</div>
+        <div class="seat" id="s26" onclick="count(26)">26</div>
+        <div class="seat" id="s27" onclick="count(27)">27</div>
+        <div class="seat" id="s28" onclick="count(28)">28</div>
+        <div class="seat" id="s29" onclick="count(29)">29</div>
+        <div class="seat" id="s30" onclick="count(30)">30</div>
+        <div class="seat" id="s31" onclick="count(31)">31</div>
+        <div class="seat" id="s32" onclick="count(32)">32</div>
+      </div>
+
+      <div class="row">
+        <div class="seat" id="s33" onclick="count(33)">33</div>
+        <div class="seat" id="s34" onclick="count(34)">34</div>
+        <div class="seat" id="s35" onclick="count(35)">35</div>
+        <div class="seat" id="s36" onclick="count(36)">36</div>
+        <div class="seat" id="s37" onclick="count(37)">37</div>
+        <div class="seat" id="s38" onclick="count(38)">38</div>
+        <div class="seat" id="s39" onclick="count(39)">39</div>
+        <div class="seat" id="s40" onclick="count(40)">40</div>
+      </div>
+
+      <div class="row">
+        <div class="seat" id="s41" onclick="count(41)">41</div>
+        <div class="seat" id="s42" onclick="count(42)">42</div>
+        <div class="seat" id="s43" onclick="count(43)">43</div>
+        <div class="seat" id="s44" onclick="count(44)">44</div>
+        <div class="seat" id="s45" onclick="count(45)">45</div>
+        <div class="seat" id="s46" onclick="count(46)">46</div> 
+        <div class="seat" id="s47" onclick="count(47)">47</div>
+        <div class="seat" id="s48" onclick="count(48)">48</div>
+      </div>
+    </div>
+
+    <div class="para">
+      <p class="text">
+        You have selected <span id="count">0</span> seats for a price of Rs <span id="total">0</span>
+      </p>
+    </div>
+    <div class="book" onclick="success()">BOOK </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+ 
